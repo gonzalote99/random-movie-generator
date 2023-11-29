@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <title>random movie generator</title>
+</head>
+<body>
+  <div id="main">
+      <div id="backgroundMyVideo">
+         
+      </div>
+      <video autoplay muted loop id="myVideo">
+        <source src="https://raw.githubusercontent.com/hoangan1201/Random-Movie-Generator/master/background-video.mp4" type="video/mp4">
+        browser not support
+      </video>
+      <div class="nav-bar">
+        <div class="nav-bar__logo"></div>
+      </div>
+      <div class="div div-select" style="z-index: 99">
+       <button class="btn">random movie</button>
+       <div class="custom-select">
+        <select id="select">
+         <option value="">all genres</option>
+        </select>
+       </div>
+
+      </div>
+  </div>
+  <div id="loading_page">
+     <img src="https://raw.githubusercontent.com/hoangan1201/Random-Movie-Generator/master/loading.gif" alt="">
+  </div>
+  <div id="movie_randomed_page">
+   <div class="nav-bar">
+     <button class="navbar-bar__btn" id="randomAgainButton">random</button>
+     <button class="navbar-bar__btn" id="random2019movie">random 2019</button>
+     <button class="navbar-bar__btn" id="homepageButton">homepage</button>
+
+
+   </div>
+   <div class="header"></div>
+   <div id="background-image">
+      <div id="custom_bg">
+     
+      </div>
+   </div>
+   <div class="wrapper">
+    <div id="poster">
+      <img id="poster_image" src="" alt="">
+    </div>
+   <div id="content">
+    <div id="title">
+       <h1 id="titleContent" >title</h1>
+       <div id="list-genres"></div>
+    </div>
+    <div id="overview">
+       <h3>overview</h3>
+       <p id="content-overview">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        
+       </p>
+    </div>
+    <div id="popularityDisplay">
+      <span id="popularitySpan1">popularity :</span><span id="popularitySpan2">5</span>
+    </div>
+    <div id="runtimeDisplay">
+      <span id="runtimeDisplaySpan">runtime :</span><span id="runtimeDisplaySpan2">9</span>
+    </div>
+    <div id="releaseDateDisplay">
+      <span id="releaseDateDisplaySpan">release date:</span> <span id="releaseDateDisplaySpan2">23/3/2019</span>
+    </div>
+    <div id="logo">
+      <a id="logoGoogle" href="" target="_blank" title="search in google" ><img id="logogg" src="https://raw.githubusercontent.com/hoangan1201/Random-Movie-Generator/master/logogoogle.png"></a>
+      <a id="logoNetflix" href="" target="_blank" title="search in netflix" ><img id="logone" src="https://raw.githubusercontent.com/hoangan1201/Random-Movie-Generator/master/logonetflix.jpg"></a>
+      <a id="logoPhimmoi" href="" target="_blank" title="search in phimmoi" ><img id="logopm" src="https://raw.githubusercontent.com/hoangan1201/Random-Movie-Generator/master/logo_phim.png"></a>
+    </div>
+    <div id="ytbTrailer">
+    
+    </div>
+  </div>
+   </div>
+   <div class="footer">
+
+   </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
